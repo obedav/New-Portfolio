@@ -75,7 +75,7 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/david-makinde-george"
+                  href="https://linkedin.com/in/obedav"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-4 transition-all hover:border-blue-300 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-blue-700"
