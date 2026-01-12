@@ -1,0 +1,132 @@
+DAVID MAKINDE-GEORGE
+Full-Stack Developer | SaaS Builder | AI Integration Specialist
+
+Nigeria | obedav@live.com | +234 7039328174
+GitHub: github.com/obedav | Portfolio: davidmg.dev
+
+================================================================================
+SUMMARY
+================================================================================
+
+Full-stack developer with 5+ years of experience building production applications
+that serve real users. Specialized in Next.js, React, and TypeScript with proven
+ability to ship end-to-end products—from AI-powered SaaS platforms to enterprise
+visa systems. Strong focus on performance optimization, security, and user
+experience. 29 public repositories, 13+ live projects in production.
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+
+Frontend:       Next.js 14-16, React 19, Vue 3, TypeScript, Tailwind CSS
+Backend:        Node.js, Laravel/PHP, .NET 8, RESTful APIs, Server Actions
+AI/ML:          OpenAI API, Embeddings, Semantic Search, Document Generation
+Database:       PostgreSQL, Supabase, MongoDB, pgvector, Row-Level Security
+Payments:       Stripe, Paystack, M-Pesa Integration
+DevOps:         Vercel, Docker, GitHub Actions, CI/CD Pipelines
+Testing:        Vitest, Playwright, React Testing Library
+
+================================================================================
+FEATURED PROJECTS
+================================================================================
+
+SWIFTPASS - Enterprise Visa Application Platform
+Next.js 14 | Supabase | Stripe | M-Pesa | TypeScript
+github.com/obedav/Swiftpass-visa-platform-dev
+
+• Built 8-step visa application wizard serving 100+ countries with real-time
+  tracking and multi-channel notifications (Email, SMS, WhatsApp)
+• Implemented client-side passport OCR using Tesseract.js, reducing form
+  filling time by 78% while maintaining user privacy (data never leaves device)
+• Integrated dual payment system (Stripe + M-Pesa), increasing payment
+  completion rate by 43% for African users
+• Achieved 94 Lighthouse performance score through Server Components and
+  code splitting (reduced bundle from 284KB to 96KB)
+• Implemented Row-Level Security in PostgreSQL for multi-tenant data isolation
+
+--------------------------------------------------------------------------------
+
+TUNDUA - AI-Powered EdTech SaaS Platform
+Next.js 14 | OpenAI | PostgreSQL | Stripe | Paystack
+Live: tundua.com | github.com/obedav/Tundua
+
+• Built and launched live SaaS platform with paying customers for study abroad
+  guidance, featuring AI document generation and consultation scheduling
+• Integrated OpenAI for automated Statement of Purpose generation, reducing
+  consultant workload by 40%
+• Implemented Stripe Connect for multi-party payments with automatic 15%
+  platform fee collection and consultant payouts
+• Built custom document management system saving $300/year vs third-party
+  solutions while providing better UX for study abroad documents
+
+--------------------------------------------------------------------------------
+
+FINANCE TRACKER - Production-Grade Personal Finance App
+Vue 3 | Laravel | PostgreSQL | TypeScript
+github.com/obedav/finance-tracker
+
+• Engineered virtual scrolling solution handling 10,000+ transactions at 60fps
+  (reduced memory usage by 90% compared to traditional DOM rendering)
+• Achieved WCAG 2.1 AA accessibility compliance with full keyboard navigation
+  and screen reader optimization
+• Implemented comprehensive security measures: CSP headers, rate limiting,
+  CSRF protection, SQL injection prevention
+• Maintained 78% test coverage with Vitest and Playwright E2E tests
+• Scored B+ (81/100) on security audit checklist
+
+--------------------------------------------------------------------------------
+
+ESTATIA - AI-Powered Real Estate Platform
+Next.js 15 | .NET 8 | OpenAI | PostgreSQL | pgvector
+github.com/obedav/Estatia
+
+• Built semantic property search using OpenAI embeddings and pgvector,
+  enabling natural language queries like "quiet neighborhood near good schools"
+• Implemented AI-generated property descriptions reducing listing creation
+  time by 70%
+• Achieved sub-100ms API response times through Redis caching and optimized
+  database queries
+
+--------------------------------------------------------------------------------
+
+ROYAL HEALTH CONSULT - Healthcare Booking Platform
+React | Node.js | PostgreSQL | TypeScript
+Live: royalhealthconsult.com
+
+• Developed and deployed live healthcare booking platform for nursing, therapy,
+  monitoring, and emergency services
+• Built real-time availability calendar eliminating double-booking issues
+• Implemented HIPAA-compliant data handling with encrypted patient records
+
+================================================================================
+CLIENT WORK
+================================================================================
+
+• Delivered 8+ client websites across education, hospitality, and energy sectors
+• Technologies: HTML/CSS/JavaScript, Laravel, React, Vue.js
+• Clients include: MrCream, St. Patrick's Church, StreetNG, Deusel Consult
+
+================================================================================
+EDUCATION & CERTIFICATIONS
+================================================================================
+
+Bachelor of Science in Computer Science
+University of the People | Expected 2026
+
+Google Cybersecurity Professional Certificate
+Google via Coursera | March 2025
+
+Responsive Web Design Certification
+freeCodeCamp | 2022
+
+================================================================================
+OPEN SOURCE & COMMUNITY
+================================================================================
+
+• 29 public repositories on GitHub
+• 400+ contributions in the past year
+• All major projects are open source with full documentation
+
+================================================================================
+
+Available for remote roles, contract projects, and technical co-founding opportunities.
