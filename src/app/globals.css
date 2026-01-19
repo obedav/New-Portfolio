@@ -60,6 +60,151 @@
   }
 }
 
+/* =============================================
+   VIEW TRANSITIONS API STYLES
+   ============================================= */
+
+/* Default crossfade for page content */
+::view-transition-old(page-content),
+::view-transition-new(page-content) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(page-content) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(page-content) {
+  animation-name: fade-in;
+}
+
+/* Header stays fixed during transitions */
+::view-transition-old(header),
+::view-transition-new(header) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* =============================================
+   SCROLL-DRIVEN ANIMATIONS
+   ============================================= */
+
+/* Fade in when entering viewport */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: scroll-fade-in linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 30%;
+}
+
+@keyframes scroll-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale + fade in variant */
+.animate-on-scroll-scale {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: scroll-scale-in linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 40%;
+}
+
+@keyframes scroll-scale-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Parallax effects for decorative elements */
+.parallax-slow {
+  animation: parallax-move linear both;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+}
+
+@keyframes parallax-move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+.parallax-medium {
+  animation: parallax-move-medium linear both;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+}
+
+@keyframes parallax-move-medium {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+/* Scroll progress indicator */
+.scroll-progress {
+  transform-origin: left;
+  animation: scroll-progress-grow linear both;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-progress-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Fallback for browsers without scroll-driven animations */
+@supports not (animation-timeline: view()) {
+  .animate-on-scroll,
+  .animate-on-scroll-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  .parallax-slow,
+  .parallax-medium {
+    animation: none;
+  }
+
+  .scroll-progress {
+    transform: scaleX(1);
+  }
+}
+
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -69,5 +214,21 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+
+  .animate-on-scroll,
+  .animate-on-scroll-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  .parallax-slow,
+  .parallax-medium {
+    animation: none;
   }
 }

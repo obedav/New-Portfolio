@@ -21,7 +21,12 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-950/80">
+    <header
+      className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-950/80"
+      style={{ viewTransitionName: 'header' }}
+    >
+      {/* Scroll Progress Indicator */}
+      <div className="scroll-progress absolute bottom-0 left-0 h-0.5 w-full bg-blue-600 dark:bg-blue-400" />
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
         aria-label="Global"

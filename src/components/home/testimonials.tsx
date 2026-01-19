@@ -57,7 +57,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-950"
+              className="@container animate-on-scroll-scale relative rounded-2xl border border-neutral-200 bg-white p-4 @sm:p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-950"
             >
               <Quote className="mb-4 h-8 w-8 text-blue-500/20" />
               <p className="mb-6 text-neutral-700 leading-relaxed dark:text-neutral-300">

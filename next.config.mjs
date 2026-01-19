@@ -14,6 +14,7 @@ const nextConfig = {
 
   experimental: {
     optimizePackageImports: ['framer-motion'],
+    viewTransition: true,
   },
 };
 

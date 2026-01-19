@@ -36,7 +36,7 @@ export function ProjectGrid() {
       className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
     >
       {projects.map((project, index) => (
-        <motion.div key={project.slug} variants={itemVariants}>
+        <motion.div key={project.slug} variants={itemVariants} className="@container">
           <ProjectBox project={project} index={index} />
         </motion.div>
       ))}

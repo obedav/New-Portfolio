@@ -129,7 +129,7 @@ export function ProjectBox({ project, index: _index }: ProjectBoxProps) {
           aria-expanded={unfoldState !== 'closed'}
           aria-controls={`project-${project.slug}`}
           aria-label={`${project.name} - Expand project details`}
-          className="flex h-full w-full flex-col justify-between p-8 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-neutral-900"
+          className="flex h-full w-full flex-col justify-between p-4 @sm:p-6 @md:p-8 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-neutral-900"
         >
           <div>
             <div className="mb-2 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
@@ -163,7 +163,7 @@ export function ProjectBox({ project, index: _index }: ProjectBoxProps) {
             animate="visible"
             exit="exit"
             id={`project-${project.slug}`}
-            className="p-8"
+            className="p-4 @sm:p-6 @md:p-8"
           >
             {/* Layer 1: Product */}
             <Layer1Product

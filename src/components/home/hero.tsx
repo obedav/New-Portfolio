@@ -26,13 +26,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:14px_24px] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)]" />
       </div>
 
-      {/* Gradient Orbs */}
+      {/* Gradient Orbs with Parallax */}
       <div
-        className="absolute -top-40 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-[100px] dark:from-blue-500/20 dark:to-purple-500/20"
+        className="parallax-slow absolute -top-40 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-[100px] dark:from-blue-500/20 dark:to-purple-500/20"
         aria-hidden="true"
       />
       <div
-        className="absolute -bottom-40 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-gradient-to-r from-indigo-500/20 to-cyan-500/20 blur-[100px] dark:from-indigo-500/10 dark:to-cyan-500/10"
+        className="parallax-medium absolute -bottom-40 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-gradient-to-r from-indigo-500/20 to-cyan-500/20 blur-[100px] dark:from-indigo-500/10 dark:to-cyan-500/10"
         aria-hidden="true"
       />
 
