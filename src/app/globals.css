@@ -205,6 +205,76 @@
   }
 }
 
+/* =============================================
+   3D INTRO BOX ANIMATION
+   ============================================= */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.intro-cube {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+  animation: cube-rotate 8s infinite linear;
+}
+
+.intro-cube:hover {
+  animation-play-state: paused;
+}
+
+.intro-cube-face {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(23, 23, 23, 0.95) 0%, rgba(38, 38, 38, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: visible;
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.1),
+    inset 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+.intro-cube-front  { transform: rotateY(0deg) translateZ(60px); }
+.intro-cube-back   { transform: rotateY(180deg) translateZ(60px); }
+.intro-cube-right  { transform: rotateY(90deg) translateZ(60px); }
+.intro-cube-left   { transform: rotateY(-90deg) translateZ(60px); }
+.intro-cube-top    { transform: rotateX(90deg) translateZ(60px); }
+.intro-cube-bottom { transform: rotateX(-90deg) translateZ(60px); }
+
+@keyframes cube-rotate {
+  0% {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+/* Hover state - stop and tilt */
+.intro-cube:hover {
+  transform: rotateX(-10deg) rotateY(-20deg);
+}
+
+/* Reduced motion: show static cube */
+@media (prefers-reduced-motion: reduce) {
+  .intro-cube {
+    animation: none;
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+
+/* =============================================
+   GENERAL REDUCED MOTION PREFERENCES
+   ============================================= */
+
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,
